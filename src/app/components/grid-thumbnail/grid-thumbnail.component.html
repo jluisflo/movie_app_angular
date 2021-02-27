@@ -1,0 +1,6 @@
+<div class="grid grid-cols-3 gap-4 pt-10">
+  <ng-template ngFor let-movie [ngForOf]="movies" let-i="index">
+    <app-thumbnail [movie]="movie">
+    </app-thumbnail>
+  </ng-template>
+</div>
