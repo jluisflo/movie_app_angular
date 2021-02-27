@@ -8,7 +8,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ThumbnailComponent } from './components/thumbnail/thumbnail.component';
 import { GridThumbnailComponent } from './components/grid-thumbnail/grid-thumbnail.component';
 import { DiscoverMovieComponent } from './pages/discover-movie/discover-movie.component';
-import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -21,8 +20,7 @@ import { MaterialModule } from './material/material.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule,
-    MaterialModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

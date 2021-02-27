@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  moviedb_api: 'https://api.themoviedb.org/3'
 };
