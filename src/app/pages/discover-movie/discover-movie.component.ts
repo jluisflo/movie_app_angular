@@ -11,6 +11,7 @@ export class DiscoverMovieComponent implements OnInit {
 
     movies: Movie[] = [];
     currentPage: number = 0;
+    isLoad: boolean = false;
 
     constructor(private movieService: MovieService) {
 
@@ -21,11 +22,14 @@ export class DiscoverMovieComponent implements OnInit {
     }
 
     getDiscoverMovies(): void {
-
+        this.isLoad = true;
         this.currentPage++;
 
         this.movieService.getDiscoveryMovies(this.currentPage)
-            .subscribe(data => { this.movies = [...this.movies].concat(data.results) });
+            .subscribe(data => {
+                this.movies = [...this.movies].concat(data.results)
+                this.isLoad = false;
+            });
     }
 
 }

@@ -1,0 +1,11 @@
+<div class="flex justify-center p-10">
+  <button
+    class="animate-bounce inline-flex items-center bg-gradient-to-r from-green-300 to-blue-400 font-normal text-white py-5 px-20 rounded-lg shadow-lg"
+    (click)="load()" [disabled]='show'>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-3"
+      [hidden]="show">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+    Load more
+  </button>
+</div>

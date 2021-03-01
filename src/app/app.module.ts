@@ -9,13 +9,15 @@ import { ThumbnailComponent } from './components/thumbnail/thumbnail.component';
 import { GridThumbnailComponent } from './components/grid-thumbnail/grid-thumbnail.component';
 import { DiscoverMovieComponent } from './pages/discover-movie/discover-movie.component';
 import { TemplateModule } from './template/template.module';
+import { LoadMoreComponent } from './components/load-more/load-more.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ThumbnailComponent,
     GridThumbnailComponent,
-    DiscoverMovieComponent
+    DiscoverMovieComponent,
+    LoadMoreComponent
   ],
   imports: [
     BrowserModule,
